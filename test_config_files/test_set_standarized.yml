@@ -1,0 +1,20 @@
+- name: iris_test_completeness
+  dataset: iris
+  table: hive_metastore.sample_data.iris_data
+  function: test_completeness
+  columns_to_test:
+    - sepal_length
+    - sepal_width
+    - petal_length
+    - petal_width
+    - target
+- name: iris_test_uniqueness
+  dataset: iris
+  table: hive_metastore.sample_data.iris_data
+  function: test_uniqueness
+  columns_to_test:
+    - sepal_length
+    - sepal_width
+    - petal_length
+    - petal_width
+    - target
